@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="sticky notes">
+    <meta name="description" content="A Sticky Notes app with color randomizer and a display of date and time, utilizing local storage to save data.">
+    <title>Sticky Notes</title>
+    <link rel="icon" href="/src/img/icon.png">
+    <link rel="stylesheet" href="src/main.css">
+</head>
+<!-- Google tag (gtag.js) --> <!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2BYZB1QP45"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2BYZB1QP45');
+</script>
+<body>
+    <header>
+        <h1>Sticky Notes</h1>
+            <p>Double click on a sticky note to delete.</p>
+    </header>
+    <div>
+        <button id="random-color-btn" class="randomize-btn">Randomize Background Color</button>
+    </div>
+    <div class="date-time-container">
+        <div><span id="today-date"></span></div>
+        <div><span class="display-time"></span></div> 
+    </div>
+    <div id="app" class="main-content sticky-items">
+        <button class="add-note" type="button">+</button>
+    </div>
+    <footer id="footer">
+        <p><small>&copy;<span id="current-footer-year">YEAR</span>&nbsp;Sticky Notes</small></p>
+    </footer>
+    <script src="src/main.js"></script>
+</body>
+</html>
